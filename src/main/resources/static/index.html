@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Test Form</h1>
+    <form action="/user" method="post">
+        <input name="REST-GET submit" type="submit"/>
+    </form>
+    <form action="/user" method="get">
+        <input name="REST-GET submit" type="submit"/>
+    </form>
+
+    <form action="/user" method="post">
+        <input name="_method"  type="hidden" value="DELETE">
+        <input name="REST-GET submit" type="submit"/>
+    </form>
+
+    <form action="/user" method="post">
+        <input name="_method" type="hidden" value="PUT">
+        <input name="REST-GET submit" type="submit"/>
+    </form>
+
+    <form action="/computer" method="post">
+        <input name ="age" type="text"/>
+        <input name ="name" type="text"/>
+        <input name="submit" type="submit"/>
+    </form>
+
+<a href="/cars;low=34;brand=byd,audi,yd">@MatrixVariable(矩阵变量)</a>
+<br><br>
+
+<a href="/car/1/owner/zhangsan">@PathVariable(id)</a>
+
+<a href="/book">@RequestHeader请求头</a>
+
+<a href="/todo">@RequestAttribute 请求头属性</a>
+</body>
+</html>
